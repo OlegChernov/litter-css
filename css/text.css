@@ -1,0 +1,16 @@
+/* стили для текста */
+.txt-red{
+	color: rgb(204,51,51);
+}
+
+.txt-blue{
+	color: rgb(102,51,204);
+}
+
+.txt-pink{
+	color: rgb(155,51,204);
+}
+
+.txt-green{
+	color: rgb(51,102,51);
+}

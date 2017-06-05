@@ -1,0 +1,73 @@
+
+/*  */
+.field::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.field::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.field:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.field:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.field:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.field:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.field:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.field:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.field:focus{
+	transition: 1s;
+}
+.field{
+	outline: none;
+	padding: 5px;
+	font-size: 15px;
+}
+
+.field-sm{
+	width: 15%;
+	min-width: 150px;
+}
+
+.field-md{
+	width: 25%;
+	min-width: 250px;
+}
+
+.field-lg{
+	width: 45%;
+	min-width: 350px;
+}
+
+.field-red{
+	border: 1px solid rgb(255,51,0);
+	transition: 1s;
+	border-radius: 5px;
+}
+.field-red:focus{
+	transition: 1s;
+	box-shadow: 0 0 10px rgb(255,51,0);
+}
+
+.field-blue{
+	border: 1px solid rgb(102,51,255);
+	transition: 1s;
+	border-radius: 5px;
+}
+.field-blue:focus{
+	transition: 1s;
+	box-shadow: 0 0 10px rgb(102,51,255);
+}
+
+.field-pink{
+	border: 1px solid rgb(255,51,255);
+	transition: 1s;
+	border-radius: 5px;
+}
+.field-pink:focus{
+	transition: 1s;
+	box-shadow: 0 0 10px rgb(255,51,255);
+}
+.field-green{
+	border: 1px solid rgb(51,153,102);
+	transition: 1s;
+	border-radius: 5px;
+}
+.field-green:focus{
+	transition: 1s;
+	box-shadow: 0 0 10px rgb(51,153,102);
+}
