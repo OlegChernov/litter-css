@@ -3,7 +3,7 @@
 большинства элементов интерфейса: кнопки, текстовые поля, радио-кнопки, и многое другое.</p>
 
 <ul>
-  <li><a href="litter-css.zzz.com.ua">Сайт</a></li>
+  <li><a href="http://litter-css.zzz.com.ua">Сайт</a></li>
   <li><a href="litter-css.zzz.com.ua/documentation.html">Документация</a></li>
   <li><a href="litter-css.zzz.com.ua/simple.html">Демо</a></li>
 </ul>
