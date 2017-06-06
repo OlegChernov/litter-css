@@ -4,6 +4,6 @@
 
 <ul>
   <li><a href="http://litter-css.zzz.com.ua">Сайт</a></li>
-  <li><a href="litter-css.zzz.com.ua/documentation.html">Документация</a></li>
-  <li><a href="litter-css.zzz.com.ua/simple.html">Демо</a></li>
+  <li><a href="http://litter-css.zzz.com.ua/documentation.html">Документация</a></li>
+  <li><a href="http://litter-css.zzz.com.ua/simple.html">Демо</a></li>
 </ul>
