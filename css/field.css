@@ -1,5 +1,5 @@
 
-/*  */
+/* текстовые поля */
 .field::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
 .field::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
 .field:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}

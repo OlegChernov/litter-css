@@ -1,4 +1,6 @@
-ol{
+/* списки */
+
+.ol-circle{
 	counter-reset: myCounter;
 }
 
@@ -20,7 +22,7 @@ ol{
 	height: 35px;
 }
 
-ol{
+.ol-square{
 	counter-reset: myCounter2;
 }
 .li-square{
