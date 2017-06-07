@@ -58,3 +58,30 @@ function EditHref(idElement, valueAttr) {
 	let element = document.getElementById(idElement);
 	element.href = valueAttr;
 }
+function showModal(idElement, idBackground) {
+	let modal = document.getElementById(idElement); // полчаем id блока
+	modal.style.display = "block"; // изменяем видимость
+	let back = document.getElementById(idBackground);
+	back.style.display = "block"; // показываем фон
+	document.body.style.overflow = "hidden"; // запрещаем прокрутку страницы
+}
+function closeModal(idElement, idBackground) {
+	let modal = document.getElementById(idElement); // получаем id блока
+	modal.style.display = "none"; // скрываем элемент
+	let back = document.getElementById(idBackground);
+	back.style.display = "none"; // скрываем фон
+	document.body.style.overflow = "scroll"; // разрешаем прокрутку
+}
+/* function timeFun(func) {
+var time = performance.now();
+	for (var i = 0; i <= 1000; i++) {
+		console.log(i);
+	}
+	time = performance.now() - time;
+console.log('Время выполнения = ', time);
+}
+timeFun();
+*/
+function isEmail(email,len=6) {
+ return ((email.length)>=len&&email.indexOf("@")>0&&(email.indexOf("."))>0)?true:false;
+}

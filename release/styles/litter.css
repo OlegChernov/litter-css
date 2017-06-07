@@ -1,0 +1,545 @@
+/* кнопки  */
+
+:active {
+  transition: 0.5;
+}
+
+.btn {
+  padding: 5px;
+  font-size: 17px;
+  outline: none;
+  transition: 0.5s;
+  border-radius: 10px;
+  border: 0;
+}
+
+.btn-red {
+  background-color: rgb(255,51,51);
+}
+
+.btn-red:active {
+  background-color: rgb(204,0,0);
+}
+
+.btn-blue {
+  background-color: rgb(102,51,255);
+}
+
+.btn-blue:active {
+  background-color: rgb(102,51,204);
+}
+
+.btn-pink {
+  background-color: rgb(255,51,255);
+}
+
+.btn-pink:active {
+  background-color: rgb(204,0,204);
+}
+
+.btn-green {
+  background-color: rgb(51,153,102);
+}
+
+.btn-green:active {
+  background-color: rgb(0,102,51);
+}
+/* текстовые поля */
+
+.field::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.field::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.field:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.field:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.field:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.field:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.field:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.field:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.field:focus {
+  transition: 1s;
+}
+
+.field {
+  outline: none;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.field-sm {
+  width: 15%;
+  min-width: 150px;
+}
+
+.field-md {
+  width: 25%;
+  min-width: 250px;
+}
+
+.field-lg {
+  width: 45%;
+  min-width: 350px;
+}
+
+.field-red {
+  border: 1px solid rgb(255,51,0);
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.field-red:focus {
+  transition: 1s;
+  box-shadow: 0 0 10px rgb(255,51,0);
+}
+
+.field-blue {
+  border: 1px solid rgb(102,51,255);
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.field-blue:focus {
+  transition: 1s;
+  box-shadow: 0 0 10px rgb(102,51,255);
+}
+
+.field-pink {
+  border: 1px solid rgb(255,51,255);
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.field-pink:focus {
+  transition: 1s;
+  box-shadow: 0 0 10px rgb(255,51,255);
+}
+
+.field-green {
+  border: 1px solid rgb(51,153,102);
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.field-green:focus {
+  transition: 1s;
+  box-shadow: 0 0 10px rgb(51,153,102);
+}
+
+.field-circle {
+  border: 1px solid rgb(0,0,0);
+  border-radius: 100px;
+}
+/* сетка */
+
+[class*='grid'],
+[class*='col-'],
+[class*='mobile-'],
+.grid:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  padding-right: 20px;
+  /* column-space */
+}
+
+[class*='col-'] [class*='col-']:last-child {
+  padding-right: 0;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 748px;
+  /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-pad {
+  padding-top: 20px;
+  padding-left: 20px;
+  /* grid-space to left */
+  padding-right: 0;
+  /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
+}
+
+.push-right {
+  float: right;
+}
+
+/* Content Columns */
+
+.col-1-1 {
+  width: 100%;
+}
+
+.col-2-3,
+.col-8-12 {
+  width: 66.66%;
+}
+
+.col-1-2,
+.col-6-12 {
+  width: 50%;
+}
+
+.col-1-3,
+.col-4-12 {
+  width: 33.33%;
+}
+
+.col-1-4,
+.col-3-12 {
+  width: 25%;
+}
+
+.col-1-5 {
+  width: 20%;
+}
+
+.col-1-6,
+.col-2-12 {
+  width: 16.667%;
+}
+
+.col-1-7 {
+  width: 14.28%;
+}
+
+.col-1-8 {
+  width: 12.5%;
+}
+
+.col-1-9 {
+  width: 11.1%;
+}
+
+.col-1-10 {
+  width: 10%;
+}
+
+.col-1-11 {
+  width: 9.09%;
+}
+
+.col-1-12 {
+  width: 8.33%;
+}
+
+/* Layout Columns */
+
+.col-11-12 {
+  width: 91.66%;
+}
+
+.col-10-12 {
+  width: 83.333%;
+}
+
+.col-9-12 {
+  width: 75%;
+}
+
+.col-5-12 {
+  width: 41.66%;
+}
+
+.col-7-12 {
+  width: 58.33%;
+}
+
+/* Pushing blocks */
+
+.push-2-3,
+.push-8-12 {
+  margin-left: 66.66%;
+}
+
+.push-1-2,
+.push-6-12 {
+  margin-left: 50%;
+}
+
+.push-1-3,
+.push-4-12 {
+  margin-left: 33.33%;
+}
+
+.push-1-4,
+.push-3-12 {
+  margin-left: 25%;
+}
+
+.push-1-5 {
+  margin-left: 20%;
+}
+
+.push-1-6,
+.push-2-12 {
+  margin-left: 16.667%;
+}
+
+.push-1-7 {
+  margin-left: 14.28%;
+}
+
+.push-1-8 {
+  margin-left: 12.5%;
+}
+
+.push-1-9 {
+  margin-left: 11.1%;
+}
+
+.push-1-10 {
+  margin-left: 10%;
+}
+
+.push-1-11 {
+  margin-left: 9.09%;
+}
+
+.push-1-12 {
+  margin-left: 8.33%;
+}
+/* Изображения */
+
+.img-circle {
+  border-radius: 100%;
+}
+/* списки */
+
+.ol-circle {
+  counter-reset: myCounter;
+}
+
+.li-circle {
+  list-style: none;
+}
+
+.li-circle:before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  line-height: 40px;
+  width: 35px;
+  height: 35px;
+}
+
+.ol-square {
+  counter-reset: myCounter2;
+}
+
+.li-square {
+  list-style: none;
+}
+
+.li-square:before {
+  counter-increment: myCounter2;
+  content: counter(myCounter2);
+  color: white;
+  background: #2980B9;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  line-height: 40px;
+  width: 35px;
+  height: 35px;
+}
+
+.li-red:before {
+  background-color: rgb(204,51,51);
+}
+
+.li-blue:before {
+  background-color: rgb(102,51,204);
+}
+
+.li-pink:before {
+  background-color: rgb(255,102,255);
+}
+
+.li-green:before {
+  background-color: rgb(51,204,102);
+}
+
+.li-black:before {
+  background-color: rgb(0,0,0);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  background-color: rgb(255,102,102);
+  padding: 2px;
+  margin: 2px;
+  color: rgb(255,255,255);
+  border-radius: 3px;
+}
+/* стили модального окна */
+
+.modal-back {
+  display: none;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal {
+  display: none;
+  min-width: 20%;
+  max-width: 80%;
+  background: white;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 10px white;
+  position: relative;
+  margin: 20px auto;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.modal-header {
+  color: #333;
+  background: rgb(174, 214, 241);
+  border-radius: 5px 5px 0 0;
+  word-wrap: break-word;
+  margin: 0!important;
+}
+
+.modal-header > h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
+  padding: 30px 25px 5px 25px;
+  margin: 0;
+}
+
+.modal-content {
+  color: #333;
+  box-shadow: inset 0 3px 3px silver;
+  word-wrap: break-word;
+}
+
+.modal-content p {
+  margin: 0;
+  padding: 25px;
+}
+
+.modal-footer {
+  text-align: right;
+  padding: 10px 25px;
+}
+
+.modal-btn {
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1em;
+}
+
+.btn-good {
+  background: rgb(60,179,113);
+  color: white;
+}
+
+.btn-alert {
+  background: rgb(240,128,128);
+  color: white;
+}
+.fix-top {
+  position: fixed;
+  top: 0;
+  padding: 3px;
+}
+
+.fix-bottom {
+  position: fixed;
+  bottom: 0;
+  padding: 3px;
+}
+
+.fix-right {
+  position: fixed;
+  right: 0;
+  padding: 3px;
+}
+
+.fix-left {
+  position: fixed;
+  left: 0;
+  padding: 3px;
+}
+/* стили для текста */
+
+.txt-red {
+  color: rgb(204,51,51);
+}
+
+.txt-blue {
+  color: rgb(102,51,204);
+}
+
+.txt-pink {
+  color: rgb(155,51,204);
+}
+
+.txt-green {
+  color: rgb(51,102,51);
+}
