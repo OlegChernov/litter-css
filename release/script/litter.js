@@ -19,7 +19,6 @@ function RemoveElement(id) {
 	el.parentNode.removeChild(el);
 	console.log("Removed item with id " + id);
 }
-
 function SearchTag(tag) {
 	let element = document.getElementsByTagName(tag);
 	console.log(element.length);
@@ -65,6 +64,7 @@ function showModal(idElement, idBackground) {
 	back.style.display = "block"; // показываем фон
 	document.body.style.overflow = "hidden"; // запрещаем прокрутку страницы
 }
+
 function closeModal(idElement, idBackground) {
 	let modal = document.getElementById(idElement); // получаем id блока
 	modal.style.display = "none"; // скрываем элемент
@@ -84,4 +84,10 @@ timeFun();
 */
 function isEmail(email,len=6) {
  return ((email.length)>=len&&email.indexOf("@")>0&&(email.indexOf("."))>0)?true:false;
+}
+
+function connect(src){
+	let elem = document.createElement('script');
+	elem.src = src;
+	document.head.appendChild(elem);
 }

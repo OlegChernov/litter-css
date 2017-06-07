@@ -10,5 +10,10 @@ timeFun();
 */
 function isEmail(email,len=6) {
  return ((email.length)>=len&&email.indexOf("@")>0&&(email.indexOf("."))>0)?true:false;
-<<<<<<< HEAD
+}
+
+function connect(src){
+	let elem = document.createElement('script');
+	elem.src = src;
+	document.head.appendChild(elem);
 }
