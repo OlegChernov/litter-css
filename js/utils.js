@@ -9,3 +9,6 @@ console.log('Время выполнения = ', time);
 
 timeFun();
 */
+function isEmail(email,len=6) {
+ return ((email.length)>=len&&email.indexOf("@")>0&&(email.indexOf("."))>0)?true:false;
+}
