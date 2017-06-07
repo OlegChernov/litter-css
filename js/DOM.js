@@ -19,7 +19,6 @@ function RemoveElement(id) {
 	el.parentNode.removeChild(el);
 	console.log("Removed item with id " + id);
 }
-
 function SearchTag(tag) {
 	let element = document.getElementsByTagName(tag);
 	console.log(element.length);
