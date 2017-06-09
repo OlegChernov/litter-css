@@ -4,7 +4,7 @@
 <h3>Поддерживаемые браузеры</h3>
  <p>Все браузеры с поддержкой ES 2015 и CSS3.</p>
 <ul>
-  <li><a href="http://litter-css.zzz.com.ua">Сайт</a></li>
-  <li><a href="http://litter-css.zzz.com.ua/documentation.html">Документация</a></li>
-  <li><a href="http://litter-css.zzz.com.ua/simple.html">Демо</a></li>
+  <li><a href="https://litter-css.ru">Сайт</a></li>
+  <li><a href="https://litter-css.ru/doc">Документация</a></li>
+  <li><a href="https://litter-css.ru/demo">Демо</a></li>
 </ul>
