@@ -57,3 +57,21 @@ function EditHref(idElement, valueAttr) {
 	let element = document.getElementById(idElement);
 	element.href = valueAttr;
 }
+
+//Testing version
+
+function Dom(root = document.body) {
+// root - элемент в котором будут происходить действия
+	this.root = root;
+	if (root != document.body) {
+		this.root = document.quer
+	}
+
+	this.createElement = functio(element, node) {
+		let text_elem = document.createTextNode(node);
+		elem.appendChild(text_elem);
+		let root_element = document.getElementById(id);
+		root_element.appendChild(elem);
+		elem.id = idElement;
+	}
+}
