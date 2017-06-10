@@ -21,3 +21,10 @@
 	left: 0;
 	padding: 3px;
 }
+
+.center{
+    text-align: center;
+}
+.center > *{
+	display: inline-block;
+}
