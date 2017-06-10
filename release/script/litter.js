@@ -57,6 +57,24 @@ function EditHref(idElement, valueAttr) {
 	let element = document.getElementById(idElement);
 	element.href = valueAttr;
 }
+
+//Testing version
+
+function Dom(root = document.body) {
+// root - элемент в котором будут происходить действия
+	this.root = root;
+	if (root != document.body) {
+		this.root = document.quer
+	}
+
+	this.createElement = functio(element, node) {
+		let text_elem = document.createTextNode(node);
+		elem.appendChild(text_elem);
+		let root_element = document.getElementById(id);
+		root_element.appendChild(elem);
+		elem.id = idElement;
+	}
+}
 function showModal(idElement, idBackground) {
 	let modal = document.getElementById(idElement); // полчаем id блока
 	modal.style.display = "block"; // изменяем видимость
@@ -72,6 +90,14 @@ function closeModal(idElement, idBackground) {
 	back.style.display = "none"; // скрываем фон
 	document.body.style.overflow = "scroll"; // разрешаем прокрутку
 }
+document.querySelector('.open').onclick = function() {
+	let a = document.querySelector('.topnav');
+	if (a.className === 'topnav') {
+		a.className += ' responsive';
+	}else{
+		a.className = 'topnav';
+	}
+}
 /* function timeFun(func) {
 var time = performance.now();
 	for (var i = 0; i <= 1000; i++) {
@@ -82,6 +108,7 @@ console.log('Время выполнения = ', time);
 }
 timeFun();
 */
+
 function isEmail(email,len=6) {
  return ((email.length)>=len&&email.indexOf("@")>0&&(email.indexOf("."))>0)?true:false;
 }
