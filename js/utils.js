@@ -26,3 +26,9 @@ function reqCss(src){
 	elem.href = src;
 	document.head.appendChild(elem);
 }
+function randbg(arr,obj,el=arr.length) {
+         el--;
+         let elem = document.querySelector(obj);
+		let rand = Math.round(Math.random() * el);
+		elem.style.backgroundColor = arr[rand];
+	}
