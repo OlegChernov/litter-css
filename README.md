@@ -5,6 +5,6 @@
  <p>Все браузеры с поддержкой ES 2015 и CSS3.</p>
 <ul>
   <li><a href="https://litter-css.ru">Сайт</a></li>
-  <li><a href="https://litter-css.ru/doc">Документация</a></li>
+  <li><a href="https://litter-css.ru/documentation">Документация</a></li>
   <li><a href="https://litter-css.ru/demo">Демо</a></li>
 </ul>
