@@ -1,7 +1,12 @@
 /*
 Develop: Oleg Chernov
+<<<<<<< HEAD
 Site: https://litter-css.ru
 Version: 1.3
+=======
+Site: http://litter-css.ru
+Version: 1.8
+>>>>>>> 98af8193adc7e2de1af12fe12c226bbdb5bee414
 */
 
 function CreateElement(id, text, element, idElement) {
