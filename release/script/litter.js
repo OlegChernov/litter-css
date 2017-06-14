@@ -1,12 +1,7 @@
 /*
 Develop: Oleg Chernov
-<<<<<<< HEAD
 Site: https://litter-css.ru
 Version: 1.3
-=======
-Site: http://litter-css.ru
-Version: 1.8
->>>>>>> 98af8193adc7e2de1af12fe12c226bbdb5bee414
 */
 
 function CreateElement(id, text, element, idElement) {
@@ -77,12 +72,48 @@ function closeModal(idElement, idBackground) {
 	back.style.display = "none"; // скрываем фон
 	document.body.style.overflow = "scroll"; // разрешаем прокрутку
 }
-document.querySelector('.open').onclick = function() {
-	let a = document.querySelector('.topnav');
-	if (a.className === 'topnav') {
+function menuDefault() {
+	let a = document.querySelector('.topnav-default');
+	if (a.className === 'topnav-default') {
 		a.className += ' responsive';
 	}else{
-		a.className = 'topnav';
+		a.className = 'topnav-default';
+	}
+}
+
+function menuGreen() {
+	let a = document.querySelector('.topnav-green');
+	if (a.className === 'topnav-green') {
+		a.className += ' responsive';
+	}else{
+		a.className = 'topnav-green';
+	}
+}
+
+function menuRed() {
+	let a = document.querySelector('.topnav-red');
+	if (a.className === 'topnav-red') {
+		a.className += ' responsive';
+	}else{
+		a.className = 'topnav-red';
+	}
+}
+
+function menuBlue() {
+	let a = document.querySelector('.topnav-blue');
+	if (a.className === 'topnav-blue') {
+		a.className += ' responsive';
+	}else{
+		a.className = 'topnav-blue';
+	}
+}
+
+function menuPink() {
+	let a = document.querySelector('.topnav-pink');
+	if (a.className === 'topnav-pink') {
+		a.className += ' responsive';
+	}else{
+		a.className = 'topnav-pink';
 	}
 }
 /* function timeFun(func) {
@@ -113,3 +144,9 @@ function reqCss(src){
 	elem.href = src;
 	document.head.appendChild(elem);
 }
+function randbg(arr,obj,el=arr.length) {
+         el--;
+         let elem = document.querySelector(obj);
+		let rand = Math.round(Math.random() * el);
+		elem.style.backgroundColor = arr[rand];
+	}
