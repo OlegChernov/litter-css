@@ -72,7 +72,7 @@ function closeModal(idElement, idBackground) {
 	back.style.display = "none"; // скрываем фон
 	document.body.style.overflow = "scroll"; // разрешаем прокрутку
 }
-function menuDefault() {
+document.querySelector('.topnav-default > .open').onclick = function () {
 	let a = document.querySelector('.topnav-default');
 	if (a.className === 'topnav-default') {
 		a.className += ' responsive';
@@ -81,7 +81,7 @@ function menuDefault() {
 	}
 }
 
-function menuGreen() {
+document.querySelector('.topnav-green > .open').onclick = function () {
 	let a = document.querySelector('.topnav-green');
 	if (a.className === 'topnav-green') {
 		a.className += ' responsive';
@@ -90,7 +90,7 @@ function menuGreen() {
 	}
 }
 
-function menuRed() {
+document.querySelector('.topnav-red > .open').onclick = function () {
 	let a = document.querySelector('.topnav-red');
 	if (a.className === 'topnav-red') {
 		a.className += ' responsive';
@@ -99,7 +99,7 @@ function menuRed() {
 	}
 }
 
-function menuBlue() {
+document.querySelector('.topnav-blue > .open').onclick = function () {
 	let a = document.querySelector('.topnav-blue');
 	if (a.className === 'topnav-blue') {
 		a.className += ' responsive';
@@ -108,7 +108,7 @@ function menuBlue() {
 	}
 }
 
-function menuPink() {
+document.querySelector('.topnav-pink > .open').onclick = function () {
 	let a = document.querySelector('.topnav-pink');
 	if (a.className === 'topnav-pink') {
 		a.className += ' responsive';
