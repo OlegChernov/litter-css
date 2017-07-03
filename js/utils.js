@@ -9,26 +9,31 @@ console.log('Время выполнения = ', time);
 timeFun();
 */
 
-function isEmail(email,len=6) {
+function isEmail(email,len) {
+len=(len===undefined)?6:len;
  return ((email.length)>=len&&email.indexOf("@")>0&&(email.indexOf("."))>0)?true:false;
 }
 
 function reqJs(src){
-	let elem = document.createElement('script');
+	var elem = document.createElement('script');
 	elem.src = src;
 	document.head.appendChild(elem);
+     delete elem;
 }
 
 function reqCss(src){
-	let elem = document.createElement('link');
+	var elem = document.createElement('link');
 	elem.rel = "stylesheet";
 	elem.type = "text/css";
 	elem.href = src;
 	document.head.appendChild(elem);
+        delete elem;
 }
-function randbg(arr,obj,el=arr.length) {
-         el--;
-         let elem = document.querySelector(obj);
-		let rand = Math.round(Math.random() * el);
+function randbg(arr,obj,el) {
+          el=(el===undefined)?arr.length:el;
+          el--;
+          var elem = document.querySelector(obj);
+		var rand = Math.round(Math.random() * el);
 		elem.style.backgroundColor = arr[rand];
+          delete elem,rand;
 	}
